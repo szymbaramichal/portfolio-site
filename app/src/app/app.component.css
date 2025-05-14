@@ -1,0 +1,56 @@
+.landing-page {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    animation: gradient-animation 1s ease infinite;
+    overflow: hidden;
+  }
+  
+  @keyframes gradient-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .content {
+    text-align: center;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    animation: fade-in 1.5s ease-in-out;
+  }
+  
+  .content h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .content h3 {
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+  
+  @keyframes fade-in {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+.linkedin-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.55rem 1rem;
+  font-size: 1rem;
+  color: white;
+  background-color: #0077b5;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.linkedin-button:hover {
+  background-color: #005582;
+  transform: scale(1.05);
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
+}
