@@ -1,40 +1,67 @@
 .landing-page {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
-    animation: gradient-animation 1s ease infinite;
-    overflow: hidden;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(120deg, #6a11cb, #2575fc, #1a7766, #6a11cb 90%);
+  background-size: 200% 200%;
+  animation: gradient-animation 12s ease-in-out infinite;
+  overflow: hidden;
+  position: relative;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
   }
-  
-  @keyframes gradient-animation {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%;
   }
-  
-  .content {
-    text-align: center;
-    color: white;
-    font-family: 'Arial', sans-serif;
-    animation: fade-in 1.5s ease-in-out;
+  100% {
+    background-position: 0% 50%;
   }
-  
-  .content h2 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+}
+
+.content {
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 24px;
+  border: 1.5px solid rgba(255, 255, 255, 0.18);
+  padding: 3rem 4rem;
+  text-align: center;
+  color: #fff;
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+  animation: fade-in 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+  max-width: 420px;
+}
+
+.content h2 {
+  font-size: 3.2rem;
+  margin-bottom: 1.2rem;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 16px rgba(38, 50, 56, 0.2);
+}
+
+.content h3 {
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+  color: #e0e0e0;
+  text-shadow: 0 1px 8px rgba(38, 50, 56, 0.15);
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-30px) scale(0.98);
   }
-  
-  .content h3 {
-    font-size: 1.5rem;
-    font-weight: 300;
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
   }
-  
-  @keyframes fade-in {
-    from { opacity: 0; transform: translateY(-20px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
+}
 
 .linkedin-button {
   display: inline-block;
