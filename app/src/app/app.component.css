@@ -29,12 +29,19 @@
   -webkit-backdrop-filter: blur(8px);
   border-radius: 24px;
   border: 1.5px solid rgba(255, 255, 255, 0.18);
-  padding: 3rem 4rem;
+  padding: 1rem 3rem;
   text-align: center;
   color: #fff;
   font-family: 'Segoe UI', 'Arial', sans-serif;
   animation: fade-in 1.5s cubic-bezier(0.4, 0, 0.2, 1);
   max-width: 420px;
+}
+
+.content h5 {
+  font-weight: 300; 
+  font-size: 10px;
+  text-shadow: 1px 1px 1px black;
+  color: aqua
 }
 
 .content h2 {
@@ -47,7 +54,7 @@
 .content h3 {
   font-size: 1.4rem;
   font-weight: 300;
-  margin-bottom: 2rem;
+  margin-bottom: 5px;
   color: #e0e0e0;
   text-shadow: 0 1px 8px rgba(38, 50, 56, 0.15);
 }
@@ -66,6 +73,7 @@
 .linkedin-button {
   display: inline-block;
   margin-top: 1rem;
+  margin-bottom: 1rem;
   padding: 0.55rem 1rem;
   font-size: 1rem;
   color: white;
